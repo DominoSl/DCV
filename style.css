@@ -1,78 +1,92 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .wrapper {
-    display: flex;
-    font-family: montserrat;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  font-family: montserrat;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .wrapper__info {
-    position: absolute;
-    z-index: 2;
+  position: absolute;
+  z-index: 2;
+  top: 10%;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 50%;
+  padding: 20px 50px;
 }
 
 .wrapper__photo {
-    float: left;
+  float: left;
+  margin-right: 3em;
+  width: 200px;
+  border-radius: 30%;
 }
 
 .wrapper__title {
-font-weight: 600;
-text-transform: lowercase;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .wrapper__title--orange {
-    color: rgb(255, 136, 0);
-    text-transform: uppercase;
+  color: #f8bb10;
+  text-transform: uppercase;
 }
 
-.wrapper__block{
-    width: 50%;
-    min-width: 500px;
-    height: 100vh;
-    text-align: center;
-    position: relative;
-    background-color: #f2f2f2;
+.wrapper__block {
+  width: 50%;
+  min-width: 600px;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  background-color: rgb(242, 242, 242);
+}
+
+.wrapper__block:hover {
+  transition: transform(scale(1.2)) 10ms;
 }
 
 .wrapper__block--dark {
-    background-color: #747474;
+  background-color: #979899;
 }
 
 .card__title {
-    position: absolute;
-    top: -80%;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
 }
 
 .card {
-    background-color: white;
-    width: 60%;
-    margin: 0 auto;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-    padding: 10px 30px;
+  background-color: white;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  top: 75%;
+  transform: translateY(-50%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0px 25px 46px 0px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05) translateY(-50%);
+}
+
+.card:hover .card__title {
+  color: #f8bb10;
 }
 
 .card--dark {
-    color: whitesmoke;
-    background-color: rgb(58, 58, 58);
+  color: whitesmoke;
+  background-color: rgb(58, 58, 58);
 }
-
-
-
-
-
-
-
 
 /* 
 .break {
@@ -104,4 +118,3 @@ text-transform: lowercase;
     width: 100%;
     padding-left: 20px;
 } */
-
