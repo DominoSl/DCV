@@ -2,6 +2,8 @@ body {
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
+    box-shadow: inset 0 0 10px #000000;
+    height: 100vh;   
 }
 
 a:link, a:visited, a:hover, a:active{
@@ -118,7 +120,9 @@ a:link, a:visited, a:hover, a:active{
     }
 
     .info , .card{
-        min-width: 600px;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 1rem; 
     }
   }
 
