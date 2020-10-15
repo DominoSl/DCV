@@ -1,5 +1,3 @@
-
-
 body {
     padding: 0;
     margin: 0;
@@ -20,17 +18,17 @@ a:link, a:visited, a:hover, a:active{
     width: 100%;
     top: 0;
     left: 0;
+    height: 100vh;
 }
 
 .back__side {
     width: 50%;
     min-width: 500px;
-    height: 100vh;
     background-color: hsl(0, 0%, 95%);
 }
 
 .back__side--dark {
-    background-color: #7c7c7c;
+    background-color: hsl(0, 0%, 50%);
 }
 
 /* background end*/
@@ -112,17 +110,16 @@ a:link, a:visited, a:hover, a:active{
 /* RESPONSIVE */
 
 @media screen and (max-width: 1000px) {
-    .back__side {
-        width: 100%;
+    .back {
+        display: none;
+    }
+    body {
         background-color: hsl(0, 0%, 95%);
     }
-    
-    .back__side--dark {
-        display: none;    }
-    
-        .info {
-            min-width: 500px;
-        }
+
+    .info , .card{
+        min-width: 600px;
+    }
   }
 
 
