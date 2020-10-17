@@ -1,64 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    box-sizing: border-box;
-    font-size: 1.5em;
-    min-width: 900px;
-    font-family: 'Open Sans', sans-serif;
-    color: #a4a5a6;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  min-width: 900px;
+  font-family: "Open Sans", sans-serif;
+  color: #a4a5a6;
 }
 
-.header {
-    display: flex;
-    width: 100%;
+.main {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.header__left {
-    background-color: #2b2c2c;
-    width: 30%;
-    min-height: 100vh;
-    height: 100%;
+.main__left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-flow: column nowrap;
+  padding-right: 1.5em;
+  width: 30%;
+  background-color: #2b2c2c;
 }
 
-.header__photo {  
-    display: block;                
-    width: 50%;
-    margin: auto;
-    margin-top: 50%;
+.main__left--color2 {
+  background-color: #292a2a;
 }
 
-.header__right {
-    background-color: #333333;
-    width: 70%;
-    min-height: 100vh;
-    height: 100%;
+.main__right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-flow: column nowrap;
+  width: 70%;
+  padding: 1.5em;
+  background-color: #2d2e2e;
 }
 
-.header__info {
-    display: flex;
-    flex-flow: column wrap;
-    margin: 12em 3em;
+.main__right--color2 {
+  background-color: #2b2c2c;
+}
+
+.main--header {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.main__photo {
+  width: 8em;
+}
+
+.main__info {
+  margin: 10em 2em;
 }
 
 .info__small {
-    text-transform: lowercase;
+  text-transform: capitalize;
 }
 
 .info__orange {
-    text-transform: uppercase;
-    color: rgb(255, 136, 0);
+  text-transform: uppercase;
+  color: rgb(255, 136, 0);
 }
 
-.header__contacts {
-    width: 70%;
-    display: flex;
-    flex-flow: row wrap;
-    text-align: left;
-    font-size: 0.75em;
-    border-top: solid 1px #4a4b4b;
-    justify-content: space-between;
-    padding: 2em 4em;
+.main__contacts {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+  font-size: 0.75em;
+  border-top: solid 1px #4a4b4b;
+  justify-content: space-between;
+  padding: 1em;
 }
