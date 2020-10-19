@@ -65,6 +65,11 @@ body {
   margin-top: auto;
 }
 
+.contact {
+  min-width: 200px;
+  padding: 1em 0.5em;
+}
+
 .info__small {
   text-transform: capitalize;
 }
