@@ -33,9 +33,9 @@ body {
 
 .main__right {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
   flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
   width: 70%;
   padding: 1.5em;
   background-color: #2d2e2e;
@@ -52,10 +52,17 @@ body {
 
 .main__photo {
   width: 8em;
+  margin: auto;
+  margin-right: 0;
 }
 
 .main__info {
-  margin: 10em 2em;
+  margin-top: auto;
+}
+
+.main__contacts {
+  width: 90%;
+  margin-top: auto;
 }
 
 .info__small {
