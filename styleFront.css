@@ -15,14 +15,16 @@ body {
   display: flex;
   box-sizing: border-box;
   width: 100%;
+  min-height: 10em;
 }
 
 .main__left {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-start;
   flex-flow: column nowrap;
   padding-right: 1.5em;
+  padding-top: 1.5em;
   width: 30%;
   background-color: #2b2c2c;
 }
@@ -33,12 +35,16 @@ body {
 
 .main__right {
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 70%;
   padding: 1.5em;
   background-color: #2d2e2e;
+}
+
+.main__right--header {
+  flex-flow: column nowrap;
 }
 
 .main__right--color2 {
@@ -60,26 +66,8 @@ body {
   margin-top: auto;
 }
 
-.main__contacts {
+.main__contacts{
   width: 90%;
-  margin-top: auto;
-}
-
-.contact {
-  min-width: 200px;
-  padding: 1em 0.5em;
-}
-
-.info__small {
-  text-transform: capitalize;
-}
-
-.info__orange {
-  text-transform: uppercase;
-  color: rgb(255, 136, 0);
-}
-
-.main__contacts {
   display: flex;
   flex-flow: row wrap;
   text-align: left;
@@ -87,4 +75,84 @@ body {
   border-top: solid 1px #4a4b4b;
   justify-content: space-between;
   padding: 1em;
+  margin-top: auto;
 }
+
+.main__contacts--footer {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: left;
+  font-size: 0.75em;
+  border-bottom: solid 1px #4a4b4b;
+  justify-content: space-between;
+  padding: 0 1em 1em 0;
+}
+
+.contact {
+  min-width: 200px;
+  padding: 1em 0.5em 1em 0;
+}
+
+.info--small {
+  text-transform: capitalize;
+  font-size: 2em;
+}
+
+.info--orange {
+  text-transform: uppercase;
+  font-size: 2em;
+  color: rgb(255, 136, 0);
+}
+
+
+.info__title {
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.expertise {
+  width: 50%;
+  min-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.expertise__number, .expertise__title, .expertise__text  {
+  margin: 0.5em;
+  margin-left: 0;
+}
+
+.expertise__number {
+  color: orange;
+  font-weight: 600;
+}
+
+.expertise__title {
+  font-weight: 600;
+}
+
+.expertise__text {
+width: 100%;
+}
+
+.certificate {
+  width: 300px;
+  display: block;
+  margin: 1em 0; 
+  transition: 0.8s;
+}
+
+.certificate:hover {
+  transform: scale(3);
+}
+
+.link {
+  text-decoration: none;
+  color: orange;
+  background-color: rgb(104, 104, 104);
+  padding: 0.25em 0.5em;
+  border-radius: 50px;
+}
+
