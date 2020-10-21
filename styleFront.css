@@ -11,6 +11,8 @@ body {
   color: #a4a5a6;
 }
 
+
+
 .main {
   display: flex;
   box-sizing: border-box;
@@ -151,7 +153,9 @@ width: 100%;
 }
 
 .portfolio-card {
-  width: 600px;
+  width: 100%;
+  min-width: 500px;
+  max-width: 900px;
   position: relative;
   overflow: hidden;
 }
@@ -167,9 +171,14 @@ width: 100%;
   left: 0;
   opacity: 0;
   color: white;
-  padding: 1em ;
   height: 100%;
   transition: ease .6s;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-left: 2em;
+
 }
 
 .portfolio-card:hover  .card__image{
