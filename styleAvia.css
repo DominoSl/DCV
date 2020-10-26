@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./img/back.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -8em;
+}
+
+.wrapper {
+    background-color: hsla(210, 100%, 56%, 0.5);
+    color: white;
+    padding: 3em;
+    height: fit-content;
+    border-radius: 50px;
+}
+
+h1 {
+    display: block;
+    font-size: 10em;
+    width:100%;
+}
+
+p {
+    display: block;
+    text-align: right;  
+    font-size: 3em;
+}
